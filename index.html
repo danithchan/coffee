@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="/Coffee/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Nigth coffee</h1>
+    </header>
+    <section class="menu">
+      <div class="card">
+        <h3>Americano</h3>
+        <p>$1.75</p>
+        <div class="card-buttons">
+          <button onclick="addToCart('Americano', 1.75, 'Cash')">
+            Pay Cash
+          </button>
+          <button onclick="addToCart('Americano', 1.75, 'ABA')">Pay ABA</button>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Ice Late</h3>
+        <p>$2</p>
+        <div class="card-buttons">
+          <button onclick="addToCart('Ice Late', 1.75, 'Cash')">
+            Pay Cash
+          </button>
+          <button onclick="addToCart('Ice Late', 1.75, 'ABA')">Pay ABA</button>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Matcha</h3>
+        <p>$2</p>
+        <div class="card-buttons">
+          <button onclick="addToCart('Matcha', 1.75, 'Cash')">Pay Cash</button>
+          <button onclick="addToCart('Matcha', 1.75, 'ABA')">Pay ABA</button>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Matcha strawberry</h3>
+        <p>$2.25</p>
+        <div class="card-buttons">
+          <button onclick="addToCart('Matcha strawberry', 1.75, 'Cash')">
+            Pay Cash
+          </button>
+          <button onclick="addToCart('Matcha strawberry', 1.75, 'ABA')">
+            Pay ABA
+          </button>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Milk Coffee</h3>
+        <p>$1.75</p>
+        <div class="card-buttons">
+          <button onclick="addToCart('Milk Coffee', 1.75, 'Cash')">
+            Pay Cash
+          </button>
+          <button onclick="addToCart('Milk Coffee', 1.75, 'ABA')">
+            Pay ABA
+          </button>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Honey coffee lemon</h3>
+        <p>$1.75</p>
+        <div class="card-buttons">
+          <button onclick="addToCart('Honey coffee lemon', 1.75, 'Cash')">
+            Pay Cash
+          </button>
+          <button onclick="addToCart('Honey coffee lemon', 1.75, 'ABA')">
+            Pay ABA
+          </button>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Honey Tea</h3>
+        <p>$1.75</p>
+        <div class="card-buttons">
+          <button onclick="addToCart('Honey Tea', 1.75, 'Cash')">
+            Pay Cash
+          </button>
+          <button onclick="addToCart('Honey Tea', 1.75, 'ABA')">Pay ABA</button>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Green Tea</h3>
+        <p>$1.75</p>
+        <div class="card-buttons">
+          <button onclick="addToCart('Green Tea', 1.75, 'Cash')">
+            Pay Cash
+          </button>
+          <button onclick="addToCart('Green Tea', 1.75, 'ABA')">Pay ABA</button>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Hanuman Spacial</h3>
+        <p>$2.25</p>
+        <div class="card-buttons">
+          <button onclick="addToCart('Hanuman Spacial', 1.75, 'Cash')">
+            Pay Cash
+          </button>
+          <button onclick="addToCart('Hanuman Spacial', 1.75, 'ABA')">
+            Pay ABA
+          </button>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Pour Over</h3>
+        <p>$1.75</p>
+        <div class="card-buttons">
+          <button onclick="addToCart('Pour Over', 1.75, 'Cash')">
+            Pay Cash
+          </button>
+          <button onclick="addToCart('Pour Over', 1.75, 'ABA')">Pay ABA</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="cart">
+      <h2>🛒 Cart</h2>
+      <table id="cartTable">
+        <thead>
+          <tr>
+            <th>Coffee</th>
+            <th>Price</th>
+            <th>Qty</th>
+            <th>Payment</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="cartBody"></tbody>
+      </table>
+      <h3>Total Quantity: <span id="totalQty">0</span></h3>
+      <h3>Total Price: $<span id="totalPrice">0</span></h3>
+    </section>
+
+    <script src="/Coffee/script.js"></script>
+  </body>
+</html>
